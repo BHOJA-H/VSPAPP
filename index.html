@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO VSP</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e88e5">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+        header { background: #1e88e5; color: white; padding: 1rem; text-align: center; }
+        nav { background: #1565c0; display: flex; justify-content: center; padding: 0.5rem; }
+        nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 2rem; max-width: 800px; margin: auto; background: white; margin-top: 1rem; border-radius: 8px; }
+        h2 { color: #1e88e5; }
+        footer { background: #1e88e5; color: white; text-align: center; padding: 1rem; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VSP NGO</h1>
+        <p>Vision • Support • Progress</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to VSP NGO</h2>
+        <p>Our mission is to create lasting positive change by supporting underprivileged communities and promoting education, healthcare, and sustainability.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>VSP NGO is a non-profit organization dedicated to empowering communities. We believe in sustainable solutions and work closely with local groups to ensure our projects create real impact.</p>
+    </section>
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <ul>
+            <li>📚 Education for All – Providing free learning resources and classes.</li>
+            <li>🏥 Health Awareness – Organizing free health check-up camps.</li>
+            <li>🌱 Green Future – Tree plantation and eco-friendly campaigns.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@vspngo.org</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: 123, NGO Street, Your City, India</p>
+    </section>
+    <footer>
+        <p>© 2025 VSP NGO. All rights reserved.</p>
+    </footer>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("Service Worker Registered"));
+        }
+    </script>
+</body>
+</html>
